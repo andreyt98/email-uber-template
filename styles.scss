@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 0.5rem;
+
+  a {
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  p{
+    color: #494949;
+  }
+
+  .button {
+    background-color: #4d994d;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-align: center;
+  }
+}
+
+.wrapper {
+  box-shadow: 0 0 10px #a7a7a7;
+  overflow: hidden;
+  width: 100%;
+
+  .header {
+    background-color: white;
+    padding: 0.5rem;
+    img {
+      width: 90px;
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+
+    .row-bg-image {
+      background: url("https://upmeals.ca/wp-content/uploads/2021/06/Fast-food-and-unhealthy-eating-concept-close-up-of-fast-food-snacks-and-cold-drink-on-yellow-background-871254830_1258x838.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding: 3rem 1rem;
+      text-align: center;
+
+      .content {
+        background-color: #ffffffe3;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+    }
+
+    .row-2 {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-block: 2rem;
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+      }
+      .nameit {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        gap: 1rem;
+        width: 100%;
+
+        img {
+          width: 90px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    padding: 1rem;
+    a {
+      color: white;
+      cursor: pointer;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 0.5rem;
+
+      &:first-of-type {
+        border-bottom: 1px solid rgb(83, 83, 83);
+      }
+
+      .column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      .socials {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        svg {
+          color: rgb(107, 107, 107);
+          width: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .wrapper {
+    width: 65%;
+  }
+}
+@media screen and (min-width: 1270px) {
+  .wrapper {
+    width: 55%;
+  }
+}
